@@ -3,6 +3,11 @@ package basics.ex2;
 public class GradeBook {
     private String courseName;
 
+    // constructor:
+    public GradeBook(String name) {
+        courseName = name;
+    }
+
     public void setCrouseName(String arg) {
         courseName = arg;
     }
