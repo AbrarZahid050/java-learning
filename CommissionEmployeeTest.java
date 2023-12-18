@@ -1,6 +1,6 @@
 public class CommissionEmployeeTest {
     public static void main(String[] args) {
-        CommissionEmployee employee = new CommissionEmployee(
+        CommissionEmployee1 employee = new CommissionEmployee1(
                 "John",
                 "Smith",
                 "123-456-7890",
