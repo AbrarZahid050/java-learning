@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ExceptionExample {
-  public static Scanner input = new Scanner(System.in);
+  protected static Scanner input = new Scanner(System.in);
 
   public static void main(String[] args) {
     int result;
