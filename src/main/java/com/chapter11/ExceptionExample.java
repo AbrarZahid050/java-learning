@@ -20,13 +20,13 @@ public class ExceptionExample {
         continueLoop = false;
         input.close();
 
-      } catch (ArithmeticException arithmeticException) {
-        System.err.printf("\nException: %s\n", arithmeticException.getMessage());
+      } catch (ArithmeticException err) {
+        System.err.printf("\nException: %s\n", err.getMessage());
         System.out.println("You must enter integers. Please try again.\n");
 
-      } catch (InputMismatchException inputMismatchException) {
+      } catch (InputMismatchException err) {
         input.next();
-        System.err.printf("\nException: %s\n", inputMismatchException);
+        System.err.printf("\nException: %s\n", err);
         System.out.println("You must enter integers. Please try again.\n");
 
       }
@@ -34,7 +34,7 @@ public class ExceptionExample {
 
   }
 
-  public static int division(int num1, int num2) {
+  public static int division(int num1, int num2) throws ArithmeticException {
     return num1 / num2;
 
   }
