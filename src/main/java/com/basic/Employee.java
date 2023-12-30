@@ -6,6 +6,13 @@ public class Employee {
   private String lastName;
   private String NIC;
 
+  // Constructor with parameters:
+  public Employee(String firstName, String lastName, String NIC) {
+    setFirstName(firstName);
+    setLastName(lastName);
+    setNIC(NIC);
+  }
+
   // Method:
   public void display(String color) {
     System.out.printf(color + "\nFirst name: %s\nLast name: %s\nNIC#: %s\n",
@@ -48,7 +55,6 @@ public class Employee {
   }
 
   private boolean isValidName(String name) {
-    System.out.println("-> [validator]");
     // Check if the name is not null and not empty
     if (name != null && !name.isEmpty()) {
       // Check if the name contains only letters
