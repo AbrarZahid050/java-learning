@@ -11,6 +11,6 @@ plugins {
 
 jar {
   manifest {
-    attributes 'Main-Class': 'com.chapter11.StackUnwinding'
+    attributes 'Main-Class': 'com.chapter16.Main'
   }
 }
