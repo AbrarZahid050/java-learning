@@ -1,9 +1,9 @@
-package com.chapter17;
+package com.chapter17.ReadWriteApp;
 
 import java.util.Scanner;
 import java.io.File;
 
-public class Main {
+public class fileExample {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
 
@@ -21,6 +21,9 @@ public class Main {
     for (String element : list) {
       System.out.println(element);
     }
+
+    System.out.println();
+    System.out.println(list.toString());
 
   }
 }

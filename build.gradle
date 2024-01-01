@@ -11,6 +11,6 @@ plugins {
 
 jar {
   manifest {
-    attributes 'Main-Class': 'com.chapter17.Main'
+    attributes 'Main-Class': 'com.chapter17.ReadWriteApp'
   }
 }
