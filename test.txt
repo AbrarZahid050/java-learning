@@ -1,3 +1,6 @@
 100 abrar zahid 657.00
 200 test test 45.00
 300 test2 test2 -345.70
+400 test3 test3 0.00
+500 test4 test4 -56.9
+500 test5 test5 456.9
