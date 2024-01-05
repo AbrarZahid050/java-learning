@@ -22,8 +22,41 @@ public class LinkedListMain {
 
     list1.addAll(list2);
 
-    for (String color : list1) {
-      System.out.println("-> [main] -> " + color);
+    printList(list1);
+    convertToUpper(list1);
+    printReverse(list1);
+    // removeItems(list1, 0, 3);
+    printList(list1);
+
+  }
+
+  private static void printList(List<String> list) {
+    for (String color : list) {
+      System.out.println("-> [printList] " + color);
     }
+    System.out.println("--------------------");
+  }
+
+  private static void convertToUpper(List<String> list) {
+    ListIterator<String> iter = list.listIterator();
+
+    while (iter.hasNext()) {
+      String color = iter.next();
+      iter.set(color.toUpperCase());
+    }
+  }
+
+  private static void printReverse(List<String> list) {
+    ListIterator<String> iter = list.listIterator(list.size());
+
+    while (iter.hasPrevious()) {
+      String color = iter.previous();
+      System.out.println("-> [printReverse] " + color);
+    }
+    System.out.println("--------------------");
+  }
+
+  private static void removeItems(List<String> list, int start, int end) {
+    list.subList(start, end).clear();
   }
 }
