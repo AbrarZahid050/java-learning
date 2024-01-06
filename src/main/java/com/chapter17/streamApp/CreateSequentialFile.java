@@ -25,6 +25,8 @@ public class CreateSequentialFile {
     double balance;
 
     Scanner input = new Scanner(System.in);
+    // comment the line below to make it run properly.
+    input.close(); // this is a temporary patch for the warning being thrown by the vs-code.
 
     System.out.printf("%s\n%s\n%s\n%s\n\n",
         "To terminate input, type the end-of-file indicator ",

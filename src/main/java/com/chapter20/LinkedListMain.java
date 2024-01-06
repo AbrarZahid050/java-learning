@@ -25,7 +25,7 @@ public class LinkedListMain {
     printList(list1);
     convertToUpper(list1);
     printReverse(list1);
-    // removeItems(list1, 0, 3);
+    removeItems(list1, 0, 3);
     printList(list1);
 
   }
