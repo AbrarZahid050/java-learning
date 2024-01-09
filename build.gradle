@@ -11,7 +11,7 @@ plugins {
 
 jar {
   manifest {
-    attributes 'Main-Class': 'com.chapter20.ComparableTest'
+    attributes 'Main-Class': 'com.formatted.FormattedOutput'
   }
 }
 
