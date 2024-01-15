@@ -22,12 +22,12 @@ public class Producer implements Runnable {
         Thread.sleep(generator.nextInt(3000));
         sharedLocation.set(count);
         sum += count;
-        System.out.printf("\t%2d\n", sum);
+        // System.out.printf("\t%2d\n", sum);
       } catch (InterruptedException err) {
         err.printStackTrace();
       }
     }
 
-    System.out.println("Producer done producing\nTerminating Producer");
+    System.out.println("Producer done producing\nTerminating Producer totaling: " + sum);
   }
 }
