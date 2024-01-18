@@ -17,7 +17,7 @@ dependencies {
 
 }
 
-mainClassName = 'com.networking.JacksonTest'
+mainClassName = 'com.networking.Server'
 
 task fatJar(type: Jar) {
 
@@ -30,7 +30,5 @@ task fatJar(type: Jar) {
         duplicatesStrategy = DuplicatesStrategy.INCLUDE
     }
     from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
-    //from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } setDuplicatesStrategy(DuplicatesStrategy.INCLUDE) }
     with jar
 }
-
