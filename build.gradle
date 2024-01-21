@@ -17,7 +17,7 @@ dependencies {
 
 }
 
-mainClassName = 'com.ByteStreams.ObjectStreamTest'
+mainClassName = 'com.networking.Server'
 
 task fatJar(type: Jar) {
 
