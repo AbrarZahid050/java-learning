@@ -17,7 +17,7 @@ dependencies {
 
 }
 
-mainClassName = 'com.networking.Server'
+mainClassName = 'com.ByteStreams.PipedStream'
 
 task fatJar(type: Jar) {
 
