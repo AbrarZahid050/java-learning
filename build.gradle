@@ -15,9 +15,13 @@ dependencies {
   // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
   implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.16.1'
 
+  // https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients
+  implementation group: 'org.apache.kafka', name: 'kafka-clients', version: '3.6.1'
+
+
 }
 
-mainClassName = 'com.ByteStreams.FunctionTest'
+mainClassName = 'com.kafka.JavaConsumer'
 
 task fatJar(type: Jar) {
 

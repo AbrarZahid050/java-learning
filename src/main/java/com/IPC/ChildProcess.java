@@ -12,7 +12,7 @@ public class ChildProcess {
       // outputing
       System.out.println("-> [Java]: Hello from Java");
 
-      // echoing the input in continous manner:
+      // echoing the input in continuous manner:
       while (true) {
         String dataFromNode = reader.readLine();
         System.out.println("-> [Java] " + dataFromNode);
@@ -25,8 +25,8 @@ public class ChildProcess {
 
       // closing the input stream.
       reader.close();
-    } catch (IOException e) {
-      e.printStackTrace();
+    } catch (IOException ex) {
+      ex.printStackTrace();
     }
   }
 }
