@@ -36,6 +36,8 @@ public class JavaConsumer {
         System.out.println("Partition:" + record.partition() + ",Offset:" + record.offset());
       }
 
+      consumer.close(); // this line is added just to remove the warning, logic would break if it is not
+                        // deleted before running the program.
     }
   }
 }
